@@ -1,118 +1,36 @@
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
 body {
-  background-color: black;
-  color: white;
-  font-family: 'Space Grotesk', sans-serif;
-  width: auto;
-  max-width: 100%;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1rem;
+  background: rgb(0, 0, 0);
+  color: rgb(242, 245, 247);
+  cursor: default;
 }
 
-/* CSS for Navigation area */
-nav {
-  display: flex;
-  justify-content: space-around;
-  padding-top: 10px;
+* {
+  box-sizing: border-box;
 }
 
-.line-up {
-  display: flex;
-  justify-content: space-between;
-  font-size: 1.2rem;
-  color: white;
-  text-decoration: none;
+html {
+  line-height: 1.15;
+  text-size-adjust: 100%;
 }
 
-a:link {
-  text-decoration: none;
-  color: white;
-}
+/* svg {
+   fill: none;
+ }
 
-a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-  background: -webkit-linear-gradient(rgb(27, 156, 240), rgb(244, 115, 117));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
-}
-
-a:active {
-  text-decoration: none;
-  background: -webkit-linear-gradient(rgb(27, 156, 240), rgb(244, 115, 117));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
-}
-
-.my-icon {
-  margin-top: 1rem;
-}
-
-.project:hover {
-  background: -webkit-linear-gradient(rgb(27, 156, 240), rgb(244, 115, 117));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
-}
-
-.tech:hover {
-  background: -webkit-linear-gradient(rgb(27, 156, 240), rgb(244, 115, 117));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
-}
-
-.about:hover {
-  background: -webkit-linear-gradient(rgb(27, 156, 240), rgb(244, 115, 117));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
-}
-
-.git {
-  /* position: absolute;
-  right: 100px; */
-  width: 30px;
-  margin-top: 1rem;
-}
-
-/* CSS for Intro Section */
-.intro {
-  margin: 150px auto;
-  text-align: left;
-  padding-left: 20%;
-  padding-right: 20%;
-}
-
-.anim{
-  display: flex;
-}
-
-.word{
-  width: 100%;
-}
-
-.intro-p {
-  font-size: 1.5rem;
-  width: 75%;
-  margin-top: 30px;
-  line-height: 2;
-}
-
-svg{
-  width:200%;
-  position: relative;
-  right: 100px;
-}
-
-h1 {
-  font-size: 4rem;
-  margin: 0 auto;
-  background: -webkit-linear-gradient(rgb(27, 156, 240), rgb(244, 115, 117));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+ svg:not(:root) {
+   overflow: hidden;
+ } */
+ul {
+  padding: 0;
 }
 
 hr {
@@ -130,70 +48,103 @@ hr {
   background: linear-gradient(270deg, rgb(19, 173, 199) 0%, rgb(148, 93, 214) 100%);
 }
 
-/* CSS for Project section */
-.proj {
-  margin: 50px auto;
+/* ***************NAVIGATION BAR**************** */
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.grid-container {
+.flex-item {
+  box-sizing: border-box;
+  /* padding: 10px 20px; */
+}
+
+.line-up {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  line-height: 2;
+  padding: 0 10px;;
+}
+
+/* ***************INTRO SECTION**************** */
+.intro {
+  display: inline-grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  /* grid-row-gap: 60px; */
   width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ***************PROJECT SECTION**************** */
+.my-projects {
+  display: inline-grid;
+  grid-template-columns: repeat(2, 35%);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 50px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .sigmart {
   width: 100%;
 }
 
-figcaption {
-  font-size: 2rem;
-  color: rgb(156, 201, 227);
-  padding-top: 5px;
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
 }
 
-.my-list {
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* .project-container{
+  width: 100%;
+  display: inline-grid;
+  justify-content: center;
+  align-items: center;
+} */
+/* .proj{
+  width: 73%;
   display: flex;
-  justify-content: space-between;
-  padding-left: 0;
-  padding-top: 10px;
-  color: rgb(216, 191, 191);
+  margin: 19.920px auto;
+} */
+/* ***************TECH SECTION**************** */
+.tech-items {
+  display: inline-grid;
+  grid-template-columns: repeat(3, 30%);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 10px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Tech */
-.t {
+/* .tech-container{
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+} */
+/* ***************ABOUT SECTION**************** */
+.about-me {
   display: flex;
-  justify-content: space-between;
-  padding-top: 50px;
+  width: 100%;
+  /* justify-content: center;
+  align-items: center; */
+  flex-direction: column;
 }
 
-div {
-  width: 30%
-}
-
-p {
-  line-height: 2;
-}
-
-footer {
+.my-footer {
   display: flex;
-  justify-content: space-between;
-  margin-left: 20%;
-  margin-bottom: 60px;
-}
-
-.horiz {
-  margin-left: 20%;
-  border-top: 1px solid;
-  border-radius: 20px;
-  border-bottom: 0;
-  border-left: 0;
-  border-right: 0;
-  border-width: 5px;
-  width: 100px;
-  background-image: -webkit-linear-gradient(rgb(27, 156, 240), rgb(244, 115, 117));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background: linear-gradient(270deg, rgb(19, 173, 199) 0%, rgb(148, 93, 214) 100%);
+   width: 100%;
+  justify-content: space-around;
+  align-items: center;
 }
