@@ -17,6 +17,10 @@
     text-align: center;
   }
 
+  .intro-p {
+    text-align: center;
+  }
+
   hr {
     margin: auto;
     border-top: 1px white;
@@ -29,6 +33,10 @@
     width: 100px;
     /* background: linear-gradient(270deg, rgb(19, 173, 199) 0%, rgb(148, 93, 214) 100%);
     color: linear-gradient(270deg, rgb(19, 173, 199) 0%, rgb(148, 93, 214) 100%); */
+  }
+
+  p{
+    text-align: center;
   }
 }
 
