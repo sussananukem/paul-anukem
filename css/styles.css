@@ -1,7 +1,37 @@
-
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .my-svg {
+    display: none;
+  }
+
+  .my-footer{
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .intro{
+    position: relative;
+    left:80px;
+  }
+
+  h1{
+    font-size: 4rem;
+    font-weight: 700;
+    background: -webkit-linear-gradient(rgb(27, 156, 240), rgb(244, 115, 117));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .intro-p{
+    line-height: 2;
+font-size: 1.5rem;
+color: #6c757d;
   }
 }
 
@@ -13,138 +43,94 @@ body {
   cursor: default;
 }
 
-* {
-  box-sizing: border-box;
+h1{
+ font-weight: 700;
+  background: -webkit-linear-gradient(rgb(27, 156, 240), rgb(244, 115, 117));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 html {
-  line-height: 1.15;
-  text-size-adjust: 100%;
-}
-
-/* svg {
-   fill: none;
+  line-height: 2;
  }
 
- svg:not(:root) {
-   overflow: hidden;
- } */
-ul {
-  padding: 0;
-}
+ a{
+   text-decoration: none;
+   color: white;
+ }
+
+ li{
+list-style: none;
+ }
+
+ a:visited {
+   text-decoration: none;
+ }
+
+ a:hover {
+   text-decoration: none;
+   background: -webkit-linear-gradient(rgb(27, 156, 240), rgb(244, 115, 117));
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   font-weight: bold;
+ }
+
+ a:active {
+   text-decoration: none;
+   background: -webkit-linear-gradient(rgb(27, 156, 240), rgb(244, 115, 117));
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   font-weight: bold;
+ }
+
+ .intro-p{
+   line-height: 2;
+ color: #6c757d;
+ }
+
+ .lang{
+   color: #b17e97;
+ }
+
+ figcaption{
+   font-size: 20px;
+   font-weight: 700;
+   color: #fff;
+ }
+
 
 hr {
   margin-left: 0;
-  border-top: 1px solid;
+  border-top: 1px solid white;
   border-radius: 20px;
   border-bottom: 0;
   border-left: 0;
   border-right: 0;
   border-width: 5px;
   width: 100px;
-  background-image: -webkit-linear-gradient(rgb(27, 156, 240), rgb(244, 115, 117));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   background: linear-gradient(270deg, rgb(19, 173, 199) 0%, rgb(148, 93, 214) 100%);
+  color: linear-gradient(270deg, rgb(19, 173, 199) 0%, rgb(148, 93, 214) 100%);
 }
-
 /* ***************NAVIGATION BAR**************** */
-.flex-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.flex-item {
-  box-sizing: border-box;
-  /* padding: 10px 20px; */
-}
-
-.line-up {
-  display: flex;
-  padding: 0 10px;;
-}
 
 /* ***************INTRO SECTION**************** */
-.intro {
-  display: inline-grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  /* grid-row-gap: 60px; */
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-}
+
 
 /* ***************PROJECT SECTION**************** */
-.my-projects {
-  display: inline-grid;
-  grid-template-columns: repeat(2, 35%);
-  grid-template-rows: repeat(2, 1fr);
-  grid-gap: 50px;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-}
+
 
 .sigmart {
-  width: 100%;
+  width: 80%;
 }
 
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
-}
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+ /* svg{
+   width: 70%
+ } */
 
-/* .project-container{
-  width: 100%;
-  display: inline-grid;
-  justify-content: center;
-  align-items: center;
-} */
-/* .proj{
-  width: 73%;
-  display: flex;
-  margin: 19.920px auto;
-} */
+
+
 /* ***************TECH SECTION**************** */
-.tech-items {
-  display: inline-grid;
-  grid-template-columns: repeat(3, 30%);
-  grid-template-rows: repeat(1, 1fr);
-  gap: 10px;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-}
 
-/* .tech-container{
-  width: 100%;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-} */
+
 /* ***************ABOUT SECTION**************** */
-.about-me {
-  display: flex;
-  width: 100%;
-  /* justify-content: center;
-  align-items: center; */
-  flex-direction: column;
-}
-
-.my-footer {
-  display: flex;
-   width: 100%;
-  justify-content: space-around;
-  align-items: center;
-}
